@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+body{
+  background:#F2B6A0 ;
+}
+
+
+.navbar{
+    display: inline-block;
+    cursor: pointer;
+
+}
+.navbar link{
+    background-color: #42455a;
+    text-align: center;
+    font-style: 'Silkscreen', cursive;
+    animation: typing 1s forwards;
+
+}
+
+.navbar a{
+    color: #42455a;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+    animation: typing 1s forwards;
+    overflow: hidden;
+}
+
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+    color: #42455a;
+    font-family: 'Silkscreen', cursive;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background:#E06469;
+} 
+section:nth-child(3){
+  color: #E06469;
+}
+section:nth-child(4){
+  color: #42455a;
+  background:#E06469;
+}
+section .container{
+  margin: 100px;
+}
+section h1{
+  font-family: 'Silkscreen', cursive;
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-family: 'Silkscreen', cursive;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 20px;
+  text-align: center;
+  text-decoration: gainsboro;
+  padding: 20px;
+  flex-grow: 1;
+}
+section .text-container .text-box h3{
+  font-family: 'Silkscreen', cursive;
+  animation: blinker 1s linear infinite;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+section .text-container .text-box h4{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 10px;
+  text-align: center;
+  text-shadow: 5px; 
+  align-items: center;
+
+}
+
+
+section .text-container .text-box .bulb{
+  border-radius: 5%;
+  margin-top: 20px;
+  text-align: right;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+
+}
+
+section .text-container .text-box .globe{
+  border-radius: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+section .text-container .text-box .rabbit{
+  border-radius: 5%;
+  margin-top: 20px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+
+@media (max-width: 900px){
+  section h1{
+    font-family: 'Silkscreen', cursive;
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes h1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes scroll {
+  from { width: 0,100 }
+  to { width: 0,50 }
+}
+.scroll{
+  font-family: 'Silkscreen', cursive;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  animation: 
+    typing 2s steps(20, end) forwards;
+}
+
+
+.h1{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;  
+  width: 0;
+  animation: typing 1s forwards;
+  font-size: 3rem;
+  font-family: 'Silkscreen', cursive;
+}
+.container1 {
+  display: inline-block;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinker {
+  100% {
+    opacity: 0;
+  }
+}
+
+section .text-container .text-box h4{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Silkscreen', cursive;
+}
